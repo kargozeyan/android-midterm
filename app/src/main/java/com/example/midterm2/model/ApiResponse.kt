@@ -4,5 +4,5 @@ import com.google.gson.annotations.SerializedName
 
 data class ApiResponse(
     @SerializedName("results")
-    val results : List<User>
+    val results : List<User>?
 )

@@ -7,7 +7,7 @@ class UserRepo {
     private val userService = RetrofitHelper.userService;
 
     suspend fun loadUsers(): List<User> {
-        return userService.getUsers().results
+        return userService.getUsers().results ?: emptyList()
     }
 
 }
